@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Main Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Main Page</h1>
+
+    <h3 id="welcome"></h3>
+
+    <button onclick="logout()">Logout</button>
+
+    <hr>
+
+    <h2>Query Music</h2>
+
+<div class="query-row">
+    <input type="text" id="title" placeholder="Title">
+    <input type="text" id="year" placeholder="Year">
+    <input type="text" id="artist" placeholder="Artist">
+    <input type="text" id="album" placeholder="Album">
+
+    <button onclick="queryMusic()">Query</button>
+</div>
+
+
+    <h2>Query Results</h2>
+
+    <div id="results"></div>
+
+    <hr>
+
+    <h2>My Subscriptions</h2>
+
+    <div id="subscriptions"></div>
+
+</div>
+
+<script src="app.js"></script>
+
+<script>
+
+document.getElementById("welcome").innerText =
+    "Welcome " + localStorage.getItem("user_name");
+
+loadSubscriptions();
+
+</script>
+
+</body>
+</html>
