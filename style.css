@@ -1,6 +1,6 @@
 body {
     font-family: Arial;
-    background: #f4f4f4;
+    background: #cd7878;
     text-align: center;
 }
 
@@ -8,7 +8,7 @@ body {
     width: 400px;
     margin: auto;
     margin-top: 100px;
-    background: white;
+    background: rgb(228, 199, 199);
     padding: 30px;
     border-radius: 10px;
 }
@@ -39,4 +39,42 @@ button {
 .query-row button {
     padding: 10px 20px;
     cursor: pointer;
+}
+#results {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 20px;
+    justify-items: center;
+}
+
+.song-card {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 8px;
+    text-align: center;
+    width: 170px;
+}
+
+.song-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.song-card p {
+    font-size: 14px;
+}
+
+.song-card img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.song-card button {
+    padding: 8px 14px;
+    font-size: 14px;
 }
